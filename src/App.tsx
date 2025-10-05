@@ -423,19 +423,25 @@ function App() {
                 
                 <div className="flex gap-4">
                   <a 
-                    href={project.liveDemo}
-                    className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-lg hover:from-cyan-600 hover:to-purple-700 transition-all duration-300 text-white font-medium"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </a>
-                  <a 
-                    href={project.github}
-                    className="flex items-center gap-2 border-2 border-slate-600 px-4 py-2 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300 text-gray-300 font-medium"
-                  >
-                    <Github size={16} />
-                    GitHub
-                  </a>
+  href={project.liveDemo}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-lg hover:from-cyan-600 hover:to-purple-700 transition-all duration-300 text-white font-medium"
+>
+  <ExternalLink size={16} />
+  Live Demo
+</a>
+
+<a 
+  href={project.github}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 border-2 border-slate-600 px-4 py-2 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300 text-gray-300 font-medium"
+>
+  <Github size={16} />
+  GitHub
+</a>
+
                 </div>
               </div>
             ))}
