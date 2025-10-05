@@ -205,10 +205,15 @@ function App() {
 
  const handleResumeDownload = () => {
   const link = document.createElement("a");
-  link.href = process.env.PUBLIC_URL + "/Yasmin_Resume.pdf"; // ensures it works on GH Pages
+  link.href = `${import.meta.env.BASE_URL}Yasmin_Resume.pdf`;
   link.download = "Yasmin_Resume.pdf";
+  document.body.appendChild(link);
   link.click();
+  document.body.removeChild(link);
 };
+
+
+
 
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
