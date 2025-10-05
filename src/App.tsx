@@ -203,12 +203,12 @@ function App() {
     }
   ];
 
-  const handleResumeDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/Yasmin_Resume.pdf"; // file inside public/
-    link.download = "Yasmin_Resume.pdf";
-    link.click();
-  };
+ const handleResumeDownload = () => {
+  const link = document.createElement("a");
+  link.href = process.env.PUBLIC_URL + "/Yasmin_Resume.pdf"; // ensures it works on GH Pages
+  link.download = "Yasmin_Resume.pdf";
+  link.click();
+};
 
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
