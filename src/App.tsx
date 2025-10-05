@@ -171,21 +171,24 @@ function App() {
   };
 
   const projects = [
-    {
-      title: "StudyBuddy",
-      description: "A full-stack resource sharing platform enabling 100+ students to upload, search, and share study materials. Features secure JWT authentication, role-based access, REST APIs with Express.js, and PostgreSQL (Neon DB).",
-      tech: ["React", "Node.js", "Express.js", "PostgreSQL", "JWT"],
-      liveDemo: "#",
-      github: "#"
-    },
-    {
-      title: "HouseHunt",
-      description: "A web platform designed for users to search, list, and filter rental properties with clean UI, responsive design, and Firebase backend for data management.",
-      tech: ["React", "Firebase", "CSS3", "JavaScript","MangoDB","Express.js","Node.js"],
-      liveDemo: "#",
-      github: "#"
-    }
-  ];
+  {
+    title: "StudyBuddy",
+    description:
+      "A full-stack resource sharing platform enabling 100+ students to upload, search, and share study materials. Features secure JWT authentication, role-based access, REST APIs with Express.js, and PostgreSQL (Neon DB).",
+    tech: ["React", "Node.js", "Express.js", "PostgreSQL", "JWT"],
+    liveDemo: "https://study-buddy-4926.onrender.com", // 👈 ADD THIS
+    github: "https://github.com/yasmin-79/Study_buddy"
+  },
+  {
+    title: "HouseHunt",
+    description:
+      "A web platform designed for users to search, list, and filter rental properties with clean UI, responsive design, and Firebase backend for data management.",
+    tech: ["React", "Firebase", "CSS3", "JavaScript", "MongoDB", "Express.js", "Node.js"],
+    liveDemo: "#",
+    github: "#"
+  }
+];
+
 
   const experiences = [
     {
